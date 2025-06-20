@@ -5,7 +5,7 @@
 ##  [Author's Email]  3405802009@qq.com
 ##  [Copyright]  Copyright Asenjo.HB.L . All rights reserved.
 
-![Teaser image](.\assets\wifi_patch_antenna.bmp)
+![Teaser image](./assets/wifi_patch_antenna.bmp)
 
 
 
