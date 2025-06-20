@@ -1,9 +1,9 @@
-#  [Notes]  wifi_patch_antenna for 2.4GHz
-#                 V 0.0.1  Initial Release (Correlation with VC measurement data)
-#  [Date]  Jun 19, 2025
-#  [Source] From Asenjo.HB.L design model at Beijing.
-#  [Author's Email]  3405802009@qq.com
-#  [Copyright]  Copyright Asenjo.HB.L . All rights reserved.
+##  [Notes]  wifi_patch_antenna for 2.4GHz
+##                 V 0.0.1  Initial Release (Correlation with VC measurement data)
+##  [Date]  Jun 19, 2025
+##  [Source] From Asenjo.HB.L design model at Beijing.
+##  [Author's Email]  3405802009@qq.com
+##  [Copyright]  Copyright Asenjo.HB.L . All rights reserved.
 
 ![Teaser image](C:\00_Asenjo\00_Project\Ketupa_demo\assets\wifi_patch_antenna.bmp)
 
