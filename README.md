@@ -59,3 +59,10 @@ Matlab:
 cd ./Ketupa/matlab/
 run s_read_files.m
 ```
+
+Output:
+![Teaser image](./assets/wifi_patch_antenna_(s_matlab).bmp)
+![Teaser image](./simulation/Ansys_HFSS/sim_results/Wifi_patch_antenna.bmp)
+
+Matlab CNN Test:
+![Teaser image](./assets/Matlab_CNN_test.bmp)
