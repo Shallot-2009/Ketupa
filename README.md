@@ -6,7 +6,7 @@
 ##  [Copyright]  Copyright Asenjo.HB.L . All rights reserved.
 
 ![Teaser image](./assets/wifi_patch_antenna.bmp)
-![Teaser image1](./assets/Elliptical_Patch_Antenna.bmp)
+![Teaser image](./assets/Elliptical_Patch_Antenna.bmp)
 
 
 
