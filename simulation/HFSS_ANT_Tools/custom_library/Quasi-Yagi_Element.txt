@@ -1,2 +1,0 @@
-Description: Quasi Yagi Antenna Element
-7GHz to 12 GHz

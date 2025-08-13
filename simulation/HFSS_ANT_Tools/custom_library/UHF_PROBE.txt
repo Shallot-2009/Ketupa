@@ -1,2 +1,0 @@
-Description: UHF Probe
-565 MHz

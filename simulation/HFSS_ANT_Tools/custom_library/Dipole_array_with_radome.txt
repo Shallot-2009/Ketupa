@@ -1,2 +1,0 @@
-Description: Dipole Array With Radome
-2.4 GHz

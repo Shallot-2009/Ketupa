@@ -1,2 +1,0 @@
-Description: WLAN dual band slot
-2.4 GHz and 5GHz

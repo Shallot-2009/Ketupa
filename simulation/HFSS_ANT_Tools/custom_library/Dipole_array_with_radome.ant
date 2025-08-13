@@ -1,9 +1,0 @@
-Dipole_array_with_radome,groundplane_and_radome
-dipole_arm_height,0.9in
-dipole_radius,0.1in
-lumped_gap_height,0.1in
-dx,3in
-dy,3in
-dipole_airbox_zsize,4in
-dipole_airbox_zshift,1.15in
-radome_thickness,1.1in

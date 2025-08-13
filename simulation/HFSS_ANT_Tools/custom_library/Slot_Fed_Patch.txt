@@ -1,2 +1,0 @@
-Description: Slot Feed Patch Antenna 
-2.25 GHz

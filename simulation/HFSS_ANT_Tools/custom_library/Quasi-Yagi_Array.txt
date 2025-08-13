@@ -1,2 +1,0 @@
-Description: Quasi Yagi 2x1 Antenna Array
-7GHz to 12GHz
