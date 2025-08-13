@@ -1,0 +1,16 @@
+WLAN_slot_antenna,final_design
+width,40mm
+length,40mm
+Ofs_short,10mm
+Ofs_fedX,1.75mm
+Ofs_fedY,6mm
+W,2.50744mm
+L1,8.98377mm
+W1,1.5mm
+extent_x_pos,-20mm
+extent_y_pos,0mm
+extent_x_size,40mm
+extent_y_size,40mm
+airbox_factor,5
+foam_thickness,7mm
+foam_lower_elevation,0mm

@@ -1,0 +1,5 @@
+Dipole_unit_cell,Dipole_unit_cell_Floquet
+thscan,0deg
+lambda,100mm
+dipole_length,0.4*lambda
+dipole_width,lambda/50
