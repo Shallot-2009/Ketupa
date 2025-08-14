@@ -709,6 +709,8 @@ sim_results_file =  f"{clean_name}_{Microstrip_Impedance}_{time_string}"
 oModule = oDesign.GetModule("ReportSetup")
 oModule.ExportToFile("Terminal S Parameter Plot 1", f"{str(target_path_2)}/{sim_results_file}.csv", False)
 oModule.ExportImageToFile("Terminal S Parameter Plot 1", f"{str(target_path_2)}/{sim_results_file}.bmp", 2030, 1102)
+
+oModule.ExportImageToFile("Terminal TDR Impedance Plot 2", f"{str(target_path_2)}/{sim_results_file}_{Microstrip_Impedance}.bmp", 2030, 1102)
 ##################################Save s para############################################
 oModule = oDesign.GetModule("Solutions")
 oModule.ExportNetworkData("D=\'10um\' L=\'100um\' Lg=\'20um\' W=\'6um\'", ["Setup1:Sweep"], 3, f"{str(target_path_2)}/{sim_results_file}.s4p",
@@ -719,4 +721,5 @@ print(f"Successful")
 ##########################################################################################
 log_file =  f"{clean_name}_{Microstrip_Impedance}_{time_string}"
 sys.stdout=open(f"{str(target_path_3)}/{log_file }.log",'w')
+
 sys.stdout.close()
