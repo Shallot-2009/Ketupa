@@ -7,8 +7,8 @@
 
 ![Teaser image](./assets/wifi_patch_antenna.bmp)
 ![Teaser image1](./assets/Elliptical_Patch_Antenna.bmp)
-![Teaser image](./assets/Surface_Microstrip_1B_50.058 ohm.bmp)
-![Teaser image](./assets/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm.bmp)
+![Teaser image](./assets/Surface_Microstrip_1B_50.058ohm.bmp)
+![Teaser image](./assets/Edge-Coupled_Offset_Stripline_1B1A_99.615ohm.bmp)
 
 
 # Ketupa—v0.0.3
@@ -157,7 +157,7 @@ python Surface_Microstrip_1B
 ```
 
 ![Teaser image](./assets/Surface_Microstrip_1B.bmp)
-![Teaser image](./assets/Surface_Microstrip_1B_50.058 ohm.bmp)
+![Teaser image](./assets/Surface_Microstrip_1B_50.058ohm.bmp)
 
 ```
 or
@@ -165,7 +165,7 @@ cd ./Ketupa/simulation/Ansys_HFSS_from_si9000/models/
 python Edge-Coupled_Offset_Stripline_1B1A
 ```
 ![Teaser image](./assets/Edge-Coupled_Offset_Stripline_1B1A.bmp)
-![Teaser image](./assets/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm.bmp)
+![Teaser image](./assets/Edge-Coupled_Offset_Stripline_1B1A_99.615ohm.bmp)
 
 
 
@@ -187,4 +187,5 @@ python Auto_desk.py
 
 Reference:
 git clone https://github.com/microsoft/OmniParser.git
+
 ```
