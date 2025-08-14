@@ -64,10 +64,12 @@ Print the impedance calculated from Polar SI9000 into a .pdf file, export and sa
    -models
      - Surface_Microstrip_1B.py
      - Edge-Coupled_Offset_Stripline_1B1A.py
+     - Diff_Offset_Coplanar_Strips_1B1A.py
      - …………
    -input_files
      - Surface_Microstrip_1B.pdf
      - Edge-Coupled_Offset_Stripline_1B1A.pdf
+     - Diff_Offset_Coplanar_Strips_1B1A.pdf
      - …………
      
    # Output
@@ -124,6 +126,7 @@ or
 cd ./Ketupa/simulation/Ansys_HFSS_from_si9000/models/
 python Surface_Microstrip_1B
 #python Edge-Coupled_Offset_Stripline_1B1A
+#python Diff_Offset_Coplanar_Strips_1B1A
 ```
 
 Matlab:
@@ -189,3 +192,4 @@ Reference:
 git clone https://github.com/microsoft/OmniParser.git
 
 ```
+
