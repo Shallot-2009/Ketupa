@@ -30,6 +30,11 @@
 
 # Introduction
 This is a deep learning project applied to signal integrity and RF antenna design analysis.
+1.Automated modeling, simulation, and data storage of HFSS for patch antennas and transmission lines.
+2.Import the impedance parameters of the transmission line designed by Si9000 into HFSS for automatic modeling and simulation analysis.
+3.API interface integration with large models to achieve interaction.
+4.Automated Desktop Control Based on OmniParser.
+5.Realize signal integrity and RF analysis through CNN.
 
 
 # Architecture
@@ -192,4 +197,5 @@ Reference:
 git clone https://github.com/microsoft/OmniParser.git
 
 ```
+
 
