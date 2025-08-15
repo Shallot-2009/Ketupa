@@ -76,7 +76,7 @@ print(f"The HFSS project has been saved as：{target_path_1/project_file_name}")
 print(f"-------------------------------------------------------------------------------------------------")
 ###############################################################################################################
 # Define constants.
-AEDT_VERSION = "2025.1"
+AEDT_VERSION = "2024.2"
 NUM_CORES = 4
 # Create a temporary directory where downloaded data or dumped data can be stored.
 # If you’d like to retrieve the project data for subsequent use, the temporary folder name is given by .temp_folder.name.
@@ -996,7 +996,7 @@ oModule.ExportToFile("Terminal S Parameter Plot 1", f"{str(target_path_2)}/{sim_
 oModule.ExportImageToFile("Terminal S Parameter Plot 1", f"{str(target_path_2)}/{sim_results_file}.bmp", 2030, 1102)
 oModule.ExportImageToFile("Terminal S Parameter Plot 2", f"{str(target_path_2)}/{sim_results_file}_mark.bmp", 2030, 1102)
 
-oModule.ExportImageToFile("Terminal TDR Impedance Plot 1", f"{str(target_path_2)}/{sim_results_file}_{Differential_Stripline_Impedance}.bmp", 2030, 1102)
+oModule.ExportImageToFile("Terminal TDR Impedance Plot 1", f"{str(target_path_2)}/{sim_results_file}_TDR.bmp", 2030, 1102)
 ##################################Save s para############################################
 oModule = oDesign.GetModule("Solutions")
 oModule.ExportNetworkData("D=\'10um\' L=\'100um\' Lg=\'20um\' W=\'6um\'", ["Setup1:Sweep"], 3, f"{str(target_path_2)}/{sim_results_file}.s4p",
@@ -1007,5 +1007,4 @@ print(f"Successful")
 ##########################################################################################
 log_file =  f"{clean_name}_{Differential_Stripline_Impedance}_{time_string}"
 sys.stdout=open(f"{str(target_path_3)}/{log_file }.log",'w')
-
 sys.stdout.close()
