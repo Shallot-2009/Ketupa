@@ -30,7 +30,7 @@
 
 # Disclaimer  
 
-The simulation part of Ketupa project uses Ansys HFSS , which is an Open Source (BSD license) python wrapper interface to the Ansys HFSS Windows COM API, enabling you to control HFSS from python. Ketupa simplifies control of HFSS from Python for RF, signal integrity, microwave, and antenna design analysis.
+The simulation part of Ketupa project uses Ansys HFSS , which uses an Open Source (BSD license) python wrapper interface to the Ansys HFSS Windows COM API, enabling you to control HFSS from python. Ketupa simplifies control of HFSS from Python for RF, signal integrity, microwave, and antenna design analysis.
 
 - This project is an open-source Python wrapper for Ansys HFSS and is not an official Ansys product.
 - The software is provided "as is" with no guarantee of functional completeness or compatibility.
@@ -215,6 +215,7 @@ Reference:
 git clone https://github.com/microsoft/OmniParser.git
 
 ```
+
 
 
 
