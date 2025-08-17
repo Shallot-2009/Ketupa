@@ -41,6 +41,7 @@ The simulation part of Ketupa project uses Ansys HFSS , which is an Open Source 
 1. Legally hold an Ansys HFSS license
 2. The secondary development script is independent of the commercial software binary/SDK
 3. Do not use the Ansys or contributors' names for promotional purposes
+4. Legally hold a Polar SI9000 license if using this software for impedance calculation
 
 
 
@@ -214,6 +215,7 @@ Reference:
 git clone https://github.com/microsoft/OmniParser.git
 
 ```
+
 
 
 
