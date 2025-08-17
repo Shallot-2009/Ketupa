@@ -4,8 +4,7 @@
 ##  [Source] From Asenjo.HB.L design model at Beijing.
 ##  [Author's Email]  3405802009@qq.com
 ##  [Copyright]  Copyright Asenjo.HB.L . All rights reserved.
-##  [Disclaimer]  When using the Ketupa project, users must confirm that they have a legitimate license for the Ansys HFSS software. Furthermore, during secondary development, ensure that the scripts used are independent of the commercial software binary/SDK. 
-The simulation part of Ketupa project uses Ansys HFSS , which is an Open Source (BSD license) python wrapper interface to the Ansys HFSS Windows COM API, enabling you to control HFSS from python. Ketupa simplifies control of HFSS from Python for RF, signal integrity, microwave, and antenna design analysis.
+##  [Disclaimer]  When using the Ketupa project, users must confirm that they have a legitimate license for the Ansys HFSS software. Furthermore, during secondary development, ensure that the scripts used are independent of the commercial software binary/SDK.   The simulation part of Ketupa project uses Ansys HFSS , which is an Open Source (BSD license) python wrapper interface to the Ansys HFSS Windows COM API, enabling you to control HFSS from python. Ketupa simplifies control of HFSS from Python for RF, signal integrity, microwave, and antenna design analysis.
 
 ![Teaser image](./assets/wifi_patch_antenna.bmp)
 ![Teaser image1](./assets/Elliptical_Patch_Antenna.bmp)
@@ -199,6 +198,7 @@ Reference:
 git clone https://github.com/microsoft/OmniParser.git
 
 ```
+
 
 
 
