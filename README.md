@@ -5,8 +5,6 @@
 ##  [Author's Email]  3405802009@qq.com
 ##  [Copyright]  Copyright Asenjo.HB.L . All rights reserved.
 
-###  [Disclaimer]  When using the Ketupa project, users must confirm that they have a legitimate license for the Ansys HFSS software. Furthermore, during secondary development, ensure that the scripts used are independent of the commercial software binary/SDK.   The simulation part of Ketupa project uses Ansys HFSS , which is an Open Source (BSD license) python wrapper interface to the Ansys HFSS Windows COM API, enabling you to control HFSS from python. Ketupa simplifies control of HFSS from Python for RF, signal integrity, microwave, and antenna design analysis.
-
 ![Teaser image](./assets/wifi_patch_antenna.bmp)
 ![Teaser image1](./assets/Elliptical_Patch_Antenna.bmp)
 ![Teaser image](./assets/Surface_Microstrip_1B_50.058ohm.bmp)
@@ -16,6 +14,7 @@
 # Ketupa—v0.0.3
 
 ### Table of Contents
+- [Disclaimer](#disclaimer)
 - [Introduction](#introduction)
 - [Architecture](#architecture)
   - [Patch_antenna](#patch_antenna)
@@ -27,6 +26,20 @@
 - [Next Steps](#next-steps)
 
 
+
+
+# Disclaimer  
+- This project is an open-source Python wrapper for Ansys HFSS and is not an official Ansys product.
+- The software is provided "as is" with no guarantee of functional completeness or compatibility.
+- We are not responsible for any losses incurred by using the Ansys COM API.
+- When including third-party components, you must verify their license compliance.
+ 
+[License] This Ketupa project uses the BSD license. Users must ensure:
+1. Legally hold an Ansys HFSS license
+2. The secondary development script is independent of the commercial software binary/SDK
+3. Do not use the Ansys or contributors' names for promotional purposes
+
+The simulation part of Ketupa project uses Ansys HFSS , which is an Open Source (BSD license) python wrapper interface to the Ansys HFSS Windows COM API, enabling you to control HFSS from python. Ketupa simplifies control of HFSS from Python for RF, signal integrity, microwave, and antenna design analysis.
 
 
 
@@ -199,6 +212,7 @@ Reference:
 git clone https://github.com/microsoft/OmniParser.git
 
 ```
+
 
 
 
