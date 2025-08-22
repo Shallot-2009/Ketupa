@@ -14,4 +14,5 @@ flask
 PyQt5
 PyQtWebEngine
 matplotlib
+paramiko
 
