@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek 对话界面</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .chat-history {
+            width: 30%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .chat-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 18px;
+            max-width: 70%;
+            word-wrap: break-word;
+        }
+        .user-message {
+            background-color: #e3f2fd;
+            margin-left: auto;
+            border-bottom-right-radius: 5px;
+        }
+        .bot-message {
+            background-color: #f1f1f1;
+            margin-right: auto;
+            border-bottom-left-radius: 5px;
+        }
+        .input-area {
+            display: flex;
+            gap: 10px;
+        }
+        #user-input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            outline: none;
+            font-size: 16px;
+        }
+        #send-btn {
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #send-btn:hover {
+            background-color: #45a049;
+        }
+        .chat-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .history-item {
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #34495e;
+        }
+        .history-item:hover {
+            background-color: #3d566e;
+        }
+        .timestamp {
+            font-size: 12px;
+            color: #95a5a6;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-history">
+            <div class="chat-title">对话历史</div>
+            <div id="history-list">
+                <!-- 历史对话会显示在这里 -->
+            </div>
+        </div>
+        <div class="chat-area">
+            <div class="messages" id="messages">
+                <!-- 消息会显示在这里 -->
+                <div class="message bot-message">你好！我是DeepSeek助手。有什么可以帮你的吗？</div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="输入你的问题...">
+                <button id="send-btn">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userInput = document.getElementById('user-input');
+            const sendBtn = document.getElementById('send-btn');
+            const messagesContainer = document.getElementById('messages');
+            const historyList = document.getElementById('history-list');
+            
+            // 发送消息函数
+            function sendMessage() {
+                const message = userInput.value.trim();
+                if (message === '') return;
+                
+                // 添加用户消息到聊天界面
+                addMessage(message, 'user');
+                userInput.value = '';
+                
+                // 模拟AI回复（实际使用时需要替换为真实的API调用）
+                setTimeout(() => {
+                    const reply = generateReply(message);
+                    addMessage(reply, 'bot');
+                    
+                    // 添加到历史记录
+                    addToHistory(message, reply);
+                }, 500);
+            }
+            
+            // 添加消息到聊天界面
+            function addMessage(text, sender) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('message');
+                messageDiv.classList.add(sender + '-message');
+                messageDiv.textContent = text;
+                messagesContainer.appendChild(messageDiv);
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+            
+            // 添加到历史记录
+            function addToHistory(userMsg, botReply) {
+                const historyItem = document.createElement('div');
+                historyItem.classList.add('history-item');
+                
+                const preview = document.createElement('div');
+                preview.textContent = userMsg.substring(0, 30) + (userMsg.length > 30 ? '...' : '');
+                
+                const timestamp = document.createElement('div');
+                timestamp.classList.add('timestamp');
+                timestamp.textContent = new Date().toLocaleString();
+                
+                historyItem.appendChild(preview);
+                historyItem.appendChild(timestamp);
+                historyList.insertBefore(historyItem, historyList.firstChild);
+                
+                // 点击历史记录可以查看完整对话
+                historyItem.addEventListener('click', function() {
+                    messagesContainer.innerHTML = '';
+                    addMessage(userMsg, 'user');
+                    addMessage(botReply, 'bot');
+                });
+            }
+            
+            // 模拟AI回复（实际使用时需要替换为API调用）
+            function generateReply(message) {
+                const replies = [
+                    "我理解你的问题是关于" + message + "。这是一个很好的问题，我的回答是...",
+                    "关于" + message + "，我可以提供以下信息...",
+                    "感谢你的提问。" + message + "这个问题可以从几个角度来分析...",
+                    "我正在思考如何最好地回答关于" + message + "的问题...",
+                    message + "这个问题很有趣。根据我的知识..."
+                ];
+                return replies[Math.floor(Math.random() * replies.length)];
+            }
+            
+            // 事件监听
+            sendBtn.addEventListener('click', sendMessage);
+            userInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
